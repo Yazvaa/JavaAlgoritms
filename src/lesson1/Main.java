@@ -23,12 +23,26 @@ public class Main {
 Оцените время выполнения алгоритма с помощью базового метода System.nanoTime().
 * */
     public static void main(String[] args) {
-	// write your code here
+        task13();
+        task14();
     }
-    private void task13(){
-        String catName="Барсук";
-        int age=5;
-        Cat cat=new Cat (catName, age);
+
+    private static Cat task13() {
+        String catName = "Барсук";
+        int age = 5;
+        Cat cat = new Cat(catName, age);
         cat.printData();
+        return cat;
+    }
+
+    private static void task14() {
+        String catName = "Барсук";
+        int age = 5;
+        Cat cat = new Cat(catName, age);
+        Cat cat1 = task13();
+        long startTime = System.nanoTime();
+        System.out.println("cat==cat1? " + (cat == cat1));
+        long endTime = System.nanoTime() - startTime;
+        System.out.println("Время выполнения сравнения:" + endTime);
     }
 }
