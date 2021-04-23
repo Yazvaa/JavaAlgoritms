@@ -1,4 +1,6 @@
-package lesson1;
+package homework.lesson1;
+
+import homework.lesson1.Cat;
 
 public class Main {
     /*

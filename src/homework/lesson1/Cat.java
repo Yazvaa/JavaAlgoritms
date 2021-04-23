@@ -1,4 +1,4 @@
-package lesson1;
+package homework.lesson1;
 
 public class Cat {
     private String name;
@@ -19,5 +19,8 @@ public class Cat {
 
     public void printData(){
         System.out.println("Моё имя - "+ this.name+", мне - "+this.age+" лет");
+    }
+    public String toString(){
+        return "Кот по имени "+this.name;
     }
 }
